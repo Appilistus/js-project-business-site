@@ -5,23 +5,32 @@ body {
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 52px;
+    margin: 10px 0;
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
 }
 
 h3 {
 
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 button {
-    background-color: #f2c94c;
+    background-color: #e16850;
     border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 16px;
     cursor: pointer;
     color: white;
+    box-shadow: 5px 5px 10px #bebaba;
 }
 
 .section-title {
@@ -30,7 +39,7 @@ button {
 
 /*navigation bar*/
 header {
-    background-color: #bebaba;
+    background-color: #9ecdcc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,16 +55,19 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .hero img {
     transform: scale(-1, 1);
-    width: 50%;
+    margin-right: 50px;
+    width: 500px;
     height: auto;
 }
 
 .hero-text {
     padding: 50px;
+    margin-left: 50px;
     text-align: left;
 }
 
@@ -69,12 +81,15 @@ nav {
     width: 100%;
     height: 400px;
 }
+
+/*cards*/
 .cards {
-    background-color: antiquewhite;
+    background-color: #fcfcfc;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
     margin: 20px;
+    box-shadow: 5px 5px 3px 0 #bebaba;
 }
 
 .cards img {
@@ -83,15 +98,13 @@ nav {
     margin-bottom: 10px;
 }
 
-/*cards*/
-.cards {}
-
 /*why ai section*/
 .why-ai {
     margin: 100px 0;
     display: flex;
     flex-direction: column;
 }
+
 .why-ai img {
     width: 50px;
     height: auto;
@@ -99,7 +112,7 @@ nav {
 }
 
 .box-left, .box-right {
-    background-color: antiquewhite;
+    background-color: #fcfcfc;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -127,14 +140,27 @@ nav {
 /*sefety section*/
 .safety {
     margin: 100px 0;
-    display: flex;
-    flex-direction: row;
 }
 
-.sefety img {
-    width:  100px !important;
+.safety-cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.safety img {
+    transform: scale(-1, 1);
+    width:  400px;
     height: auto;
     margin-bottom: 10px;
+}
+.safety-text {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 3;
 }
 
 /*price section*/
@@ -169,7 +195,7 @@ nav {
 
 /*footer*/
 footer {
-    background-color: #bebaba;
+    background-color: #9ecdcc;
     text-align: center;
     padding: 10px;
 }

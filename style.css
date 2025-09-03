@@ -1,4 +1,5 @@
 body {
+    background-color: #fcfcfc;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
 }
@@ -24,10 +25,11 @@ p {
 
 button {
     background-color: #e16850;
+    font-size: 24px;
+    font-weight: 500;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 30px;
-    font-size: 16px;
     cursor: pointer;
     color: white;
     box-shadow: 5px 5px 10px #bebaba;
@@ -43,6 +45,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 50px;
 }
 nav {
     display: flex;
@@ -73,7 +77,9 @@ nav {
 
 /*services section*/
 .service {
+    background-color: #9ecdcc;
     margin: 100px 0;
+    padding: 50px;
 }
 .service-cards {
     display: flex;
@@ -84,7 +90,7 @@ nav {
 
 /*cards*/
 .cards {
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
@@ -112,7 +118,7 @@ nav {
 }
 
 .box-left, .box-right {
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -140,6 +146,8 @@ nav {
 /*sefety section*/
 .safety {
     margin: 100px 0;
+    background-color: #9ecdcc;
+    padding: 50px;
 }
 
 .safety-cards {
@@ -181,10 +189,11 @@ nav {
 /*cta section*/
 .call-to-action {
     background-color: #edcdcd;
-    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 20px;
     margin-top: 20px;
     height: 500px;
@@ -197,5 +206,10 @@ nav {
 footer {
     background-color: #9ecdcc;
     text-align: center;
-    padding: 10px;
+    padding: 10px;   
+}
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }

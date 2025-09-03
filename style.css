@@ -42,9 +42,27 @@ nav {
 }
 
 /*hero section*/
-.hero {}
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero img {
+    transform: scale(-1, 1);
+    width: 50%;
+    height: auto;
+}
+
+.hero-text {
+    padding: 50px;
+    text-align: left;
+}
 
 /*services section*/
+.service {
+    margin: 100px 0;
+}
 .service-cards {
     display: flex;
     flex-direction: row;
@@ -59,32 +77,70 @@ nav {
     margin: 20px;
 }
 
+.cards img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 /*cards*/
 .cards {}
 
 /*why ai section*/
-.why-ai {}
+.why-ai {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+.why-ai img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 .box-left, .box-right {
     background-color: antiquewhite;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    flex-direction: space-between;
     padding: 20px;
     margin: 20px;
 }
 
 .box-left img, .box-right img {
     width: 200px;
-    height: auto;
+    height: 200px;
+}
+.box-left p, .box-right p {
+    width: 50%;
+    padding: 20px;
+    align-self: center;
+}
+.box-left {
+    display: flex;
+    align-self: flex-start;}
+.box-right {
+    align-self: flex-end;
 }
 
 /*sefety section*/
-.safety {}
+.safety {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.sefety img {
+    width:  100px !important;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 /*price section*/
+.price {
+    margin: 100px 0;
+}
 .price-cards {
     display: flex;
     flex-direction: row;
@@ -97,12 +153,23 @@ nav {
 }
 
 /*cta section*/
-.cta {}
+.call-to-action {
+    background-color: #edcdcd;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    height: 500px;
+}
+.call-to-action button {
+    margin-top: 20px;
+}
 
 /*footer*/
 footer {
     background-color: #bebaba;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
 }

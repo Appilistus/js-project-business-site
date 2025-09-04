@@ -2,6 +2,7 @@ body {
     background-color: #fcfcfc;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
+    color: #5c5b62;
 }
 
 h1 {
@@ -34,6 +35,7 @@ button {
     color: white;
     box-shadow: 5px 5px 10px #bebaba;
 }
+.button:hover {}
 
 .section-title {
     text-align: center;
@@ -44,9 +46,8 @@ header {
     background-color: #9ecdcc;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: canter;
     padding: 10px 20px;
-    margin-bottom: 50px;
 }
 nav {
     display: flex;
@@ -56,10 +57,12 @@ nav {
 
 /*hero section*/
 .hero {
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 70px;
 }
 
 .hero img {
@@ -78,30 +81,61 @@ nav {
 /*services section*/
 .service {
     background-color: #9ecdcc;
-    margin: 100px 0;
-    padding: 50px;
+    margin-bottom: 0;
+    padding: 100px;
 }
 .service-cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
     width: 100%;
-    height: 400px;
+    height: auto;
+    box-sizing: border-box;
 }
-
-/*cards*/
 .cards {
     background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
     box-shadow: 5px 5px 3px 0 #bebaba;
+    transition: transform 0.3s;
+}
+.cards:hover {
+    transform: translateY(-5px);
 }
 
 .cards img {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+}
+.wave {
+    overflow: hidden;
+}
+.wave1 {
+    background: #9ecdcc;
+    border-bottom-left-radius: 800px 200px;
+    border-bottom-right-radius: 800px 200px;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    margin-bottom: 100px;
+}
+.wave2 {
+    background: #9ecdcc;
+    border-top-left-radius: 800px 200px;
+    border-top-right-radius: 800px 200px;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 150px;
+    margin-top: 100px;
+
 }
 
 /*why ai section*/
@@ -116,36 +150,38 @@ nav {
     height: auto;
     margin-bottom: 10px;
 }
-
-.box-left, .box-right {
+.ai-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.ai-box {
     background-color: #ffffff;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    flex-direction: space-between;
+    justify-content: space-between;
     padding: 20px;
     margin: 20px;
+    box-shadow: 5px 5px 3px 0 #9ecdcc;
 }
 
-.box-left img, .box-right img {
+.ai-box img {
     width: 200px;
     height: 200px;
 }
-.box-left p, .box-right p {
+.ai-box p {
     width: 50%;
     padding: 20px;
     align-self: center;
 }
-.box-left {
-    display: flex;
-    align-self: flex-start;}
-.box-right {
-    align-self: flex-end;
-}
 
 /*sefety section*/
 .safety {
-    margin: 100px 0;
+    margin-bottom: 100px;
+    margin-top: 0;
     background-color: #9ecdcc;
     padding: 50px;
 }
@@ -164,6 +200,7 @@ nav {
     width:  400px;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 50%;
 }
 .safety-text {
     font-size: 45px;
@@ -175,20 +212,24 @@ nav {
 .price {
     margin: 100px 0;
 }
-.price-cards {
-    display: flex;
-    flex-direction: row;
+.price-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
     width: 100%;
-    height: 400px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 80px 0;
 }
 .price-text {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 150px;
 }
 
 /*cta section*/
 .call-to-action {
-    background-color: #edcdcd;
+    background-image: url(bg-img.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;

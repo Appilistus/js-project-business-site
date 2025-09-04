@@ -12,12 +12,10 @@ h1 {
 }
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 36px;
+    font-size: 48px;
 }
 
-h3 {
-
-}
+h3 {}
 
 p {
     font-size: 18px;
@@ -25,7 +23,7 @@ p {
 }
 
 button {
-    background-color: #e16850;
+    background:linear-gradient(90deg, rgb(225, 104, 80), rgb(250, 133, 110));
     font-size: 24px;
     font-weight: 500;
     border: none;
@@ -35,7 +33,13 @@ button {
     color: white;
     box-shadow: 5px 5px 10px #bebaba;
 }
-.button:hover {}
+button:hover {
+    box-shadow: none;
+    transform: translateY(-2px);
+    background: #ffffff;
+    color: rgb(250, 133, 110);
+    border: 2px solid rgb(250, 133, 110);
+}
 
 .section-title {
     text-align: center;
@@ -47,12 +51,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: canter;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 nav {
     display: flex;
+    justify-content: space-around;
     gap: 20px;
     margin-right: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+    
+header a {
+    text-decoration: none;
+    color: #5c5b62;
+    font-weight: 500;
 }
 @media (max-width: 1023px) {
     header {
@@ -128,6 +144,7 @@ nav {
 }
 .cards:hover {
     transform: translateY(-5px);
+    background: #f7f6f6;
 }
 @media (max-width: 1023px) {
     .service-cards {
@@ -190,7 +207,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     margin-top: 50px;
 }
 .ai-box {
@@ -279,9 +296,8 @@ nav {
     margin: 100px 0;
 }
 .price-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    display: flex;
+    gap: 50px;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -291,10 +307,11 @@ nav {
     text-align: center;
     margin-top: 150px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 667px) {
     .price-box {
-        grid-template-columns: 1fr;
-        gap: 80px;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
     }
 }
 

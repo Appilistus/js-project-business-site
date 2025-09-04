@@ -8,14 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Asako| Business website </title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>    
 </head>
 <body>
     <header>
         <h3>Asako</h3>
         <nav>
-            <a href="#">Program</a>
-            <a href="#">Why AI</a>
-            <a href="#">Safety</a>
+            <ul>
+                <a href="#program">Program</a>
+                <a href="#why-ai">Why AI</a>
+                <a href="#safety">Safety</a>    
+            </ul>
             <a href="#"><button>Get started</button></a>
         </nav>
     </header>
@@ -36,7 +43,7 @@
             </div>
         </div>
         <!--Service section-->
-        <section class="service">
+        <section class="service" id="program">
             <div class="section-title">
                 <h2>AI Made Simple, Fun, and Exciting</h2>
                 <p>In our program, children don't just learn AI - they create with it!</p>
@@ -74,7 +81,7 @@
                 <div class="wave1"></div>
         </div>
         <!--why ai section-->
-        <section class="why-ai">
+        <section class="why-ai" id="why-ai">
             <div class="section-title">
                 <h2>Why Should Kids Learn AI Now?</h2>
             </div>
@@ -97,7 +104,7 @@
                 <div class="wave2"></div>
         </div>
         <!--sefety section-->
-        <section class="safety">
+        <section class="safety" id="safety">
             <div class="section-title">
                 <h2>Safety First - Always</h2>
                 <p>We know parents worry about online risks</p>
@@ -118,27 +125,21 @@
                 <h2>Choose the Best Way to Start</h2>
             </div>
             <div class="price-box">
-                <div class="price-cards">
                     <div class="cards">
                         <img src="hands.png" alt="Trial Icon">
                         <h3>Trial Workshop(One-Time)</h3>
                         <p>Free</p>
                     </div>
-                </div>
-                <div class="price-cards">
                     <div class="cards">
                         <img src="lamp.png" alt="Monthly Icon">
                         <h3>Monthly Plan</h3>
                         <p>$xx/month (4 classes)</p>
                     </div>
-                </div>
-                <div class="price-cards">
                     <div class="cards">
                         <img src="user-robot.png" alt="Group Icon">
                         <h3>School/Group Plan</h3>
                         <p>Custom pricing available</p>
                     </div>
-                </div>
             </div>               
             <p class="price-text">👉Start small with a trial class - and see the excitement for yourself!</p>
         </section>

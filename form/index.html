@@ -1,0 +1,37 @@
+<form action="">
+    <link rel="stylesheet" href="./style.css" />
+    <h2>Sign Up</h2>
+    <fieldset>
+        <label><span>Name</span>
+            <input type="text" id="name" name="name" required />
+        </label>
+        
+        <label><span>Email</span>
+            <input type="email" id="email" name="email" required />
+        </label>
+
+        <label><span>Age Group</span>
+            <input type="checkbox" name="ageGroup" value="lowerElementary" required>Lower Elementary</input>
+            <input type="checkbox" name="ageGroup" value="upperElementary" required>Upper Elementary</input>
+            <input type="checkbox" name="ageGroup" value="middleSchool" required>Middle School</input>
+            <input type="checkbox" name="ageGroup" value="highSchool" required>High School</input>
+        </label>
+
+        <label><span>Who are you?</span>
+            <input type="radio" name="whoAreYou" value="parent" checked required>Parent</input>
+            <input type="radio" name="whoAreYou" value="teacher" required>Teacher</input>
+        </label>
+
+        <div class="line"></div>
+
+        <label><span>Interested in</span>
+            <select name="interestedIn" id="interestedIn" required>
+                <option value="selectAnswer">--Select Answer--</option>
+                <option value="creativeProjects">Creative Projects</option>
+                <option value="aiBasics">AI Basics</option>
+                <option value="careeerPreparation">Career Preparation</option>
+            </select>
+        </label>
+        <button type="submit">Get Started</button>
+    </fieldset>
+</form>

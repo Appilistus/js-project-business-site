@@ -29,7 +29,7 @@ p {
 }
 
 button {
-    background:linear-gradient(90deg, rgb(225, 104, 80), rgb(250, 133, 110));
+    background-color :#FF9800;
     font-size: 24px;
     font-weight: 500;
     border: none;
@@ -43,8 +43,8 @@ button:hover {
     box-shadow: none;
     transform: translateY(-2px);
     background: #ffffff;
-    color: rgb(250, 133, 110);
-    border: 2px solid rgb(250, 133, 110);
+    color: #FF9800;
+    border: 2px solid #FF9800;
 }
 
 .section-title {

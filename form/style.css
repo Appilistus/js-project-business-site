@@ -137,7 +137,7 @@ input[type="checkbox"] { /*delete the default checkbox*/
 .checkbox-label input:checked + .custom-checkbox {
     background-color: #FF9800;
 }
-.custom-checkbox::after { /*create the checkmark/indicator (hidden when not checked)*/
+.custom-checkbox::after { /*create the check mark/indicator (hidden when not checked)*/
     content: "";
     position: absolute;
     display: none;
@@ -149,7 +149,7 @@ input[type="checkbox"] { /*delete the default checkbox*/
     left: 7px;
     transform: rotate(45deg);
     }
-.age-checkbox input:checked ~ .custom-checkbox:after {
+.age-checkbox input:checked ~ .custom-checkbox:after { /*putt the check mark on the custom checkbox when checked*/
     display: block;
 }
 
@@ -169,7 +169,7 @@ input[type="checkbox"] { /*delete the default checkbox*/
     user-select: none;
     margin-bottom: 10px;
 }
-.who-radio input { /*delete the default checkbox*/
+.who-radio input { /*delete the default radio button*/
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -184,7 +184,7 @@ input[type="checkbox"] { /*delete the default checkbox*/
     font-size: 16px;
     font-weight: lighter;
 }
-.custom-radio { /*create a custom checkbox*/
+.custom-radio { /*create a custom radio button*/
     display: inline-block;
     top: 0;
     left: 0;
@@ -203,7 +203,7 @@ input[type="checkbox"] { /*delete the default checkbox*/
 .radio-label input:checked ~ .custom-radio {
     background-color: #FF9800;
 }
-.custom-radio:after { /*create the checkmark (hidden when not checked)*/
+.custom-radio:after { /*create the check mark (hidden when not checked)*/
     content: "";
     position: absolute;
     display: none;
@@ -220,6 +220,13 @@ input[type="checkbox"] { /*delete the default checkbox*/
 }
 .who-radio input:focus + .custom-radio {
     outline: #898989 auto 1px;
+}
+
+.select-answer {
+    color: #FF9800;
+    font-size: 15px;
+    opacity: 0.7;
+    font-style: italic;
 }
 
 button {

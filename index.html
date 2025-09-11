@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/user-robot.png">
     <title>AI Compass | AI education for children </title>
     <style>
@@ -43,12 +43,16 @@
             <div class="overlay"></div>
 
             <div class="hero-text">
-                <h1>Give Your Child</h1>
-                <h1>the Superpower of AI</h1>
-                <h1> - The Skill of the Future</h1>
-                <p>Fun, safe, and engaging AI lessons</p>
-                <p>designed for elementary and</p>
-                <p>middle school students</p>
+                <div class="hero-h1">
+                    <h1>Give Your Child</h1>
+                    <h1>the Superpower of AI</h1>
+                    <h1> - The Skill of the Future</h1>
+                </div>
+                <div class="hero-p">
+                    <p>Fun, safe, and engaging AI lessons</p>
+                    <p>designed for elementary and</p>
+                    <p>middle school students</p>
+                </div>
                 <a href="./form/index.html">
                     <button>Join a Free Trial Class Today</button>
                 </a>
@@ -150,14 +154,30 @@
                 <p>We know parents worry about online risks</p>
                 <p>That's why our AI lessons are design with:</p>
             </div>
-            <div class="safety-cards">
-                <img 
+            <div class="safety-img-text">
+                <img
+                    id="safety-img"
                     src="./images/safety.png" 
-                    alt="safety-icon">
-                <div class="safety-text">
-                    <p>-Strict safety guidelines and no personal data sharing</p>
-                    <p>-Supervised sessions led by trained instructors</p>
-                    <p>-Child-friendly AI tools appropriate for yourn lenaers</p>
+                    alt="safety-image">
+                <div class="safety-boxes">
+                    <div class="safety-box">
+                        <img 
+                        src="./images/guidline.png" 
+                        alt="guidelines">
+                        <p>Strict safety guidelines and no personal data sharing</p>
+                    </div>
+                    <div class="safety-box">
+                        <img 
+                        src="./images/eye.png" 
+                        alt="eye">
+                        <p>Supervised sessions led by trained instructors</p>
+                    </div>
+                    <div class="safety-box">
+                        <img 
+                        src="./images/lock.png" 
+                        alt="key">
+                        <p>Child-friendly AI tools appropriate for yourn lenaers</p>
+                    </div>
                 </div>
             </div>
         </section>

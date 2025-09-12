@@ -89,13 +89,7 @@ input[type="radio"] {
     outline: none;
 }
 
-.your-name::placeholder {
-    color: #FF9800;
-    font-size: 15px;
-    opacity: 0.7;
-    font-style: italic;
-}
-
+.your-name::placeholder,
 .input-email::placeholder {
     color: #FF9800;
     font-size: 15px;

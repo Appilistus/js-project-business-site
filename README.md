@@ -1,3 +1,3 @@
 # js-project-business-site
 
-https://asakos-business-site.netlify.app/
+https://ai-compass-business-site.netlify.app/

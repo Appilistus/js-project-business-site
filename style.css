@@ -66,10 +66,45 @@ nav {
     gap: 20px;
     margin-right: 20px;
 }
-ul {
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.container ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 30px;
+}
+
+.btn {
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+    background-color: red;
+    z-index: 100;
+}
+
+.btn li {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    width: 100px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.line-1 {
+    top: 20px;
+}
+.line-2 {
+    top: 30px;
+}
+.line-3 {
+    top: 40px;
 }
     
 header a {
@@ -78,7 +113,7 @@ header a {
     font-weight: 500;
 }
 @media (max-width: 1023px) {
-    header {
+    .container {
     display: none;
     }
 }
@@ -88,20 +123,24 @@ header a {
     position: relative;
     width: 100%;
     height: 80vh;
-    /*                          this is for the hero image
-    background-color: #ffffff; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 70px; */
+    overflow: hidden;
 }
-/* .hero img {
-    transform: scale(-1, 1);
-    margin-right: 50px;
-    width: 500px;
-    height: auto;
-} */
+.hero-image img {   /*this is for tablet and mobile*/
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@media (min-width:1024px) {  /*hidden for desktop*/
+    .hero-image {
+        display: none;
+    }
+}
+@media (max-width:1023px) {  /*hidden for tablet and mobile*/ 
+    video {
+        display: none;
+    }
+}
 .hero-video {
     position: relative;
     width: 100%;

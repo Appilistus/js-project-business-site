@@ -16,3 +16,23 @@ document.querySelectorAll(".mobile-navbar a").forEach(link => {
         overlay.classList.remove("active");
     });
 });
+
+// back to top button
+const backButton = document.querySelector(".backBtn");
+
+// back to top when click
+backButton.addEventListener("click", () => {
+    window.scroll({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+//show when scroll
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 100) {
+        backButton.classList.add("is-active");
+    }else{
+        backButton.classList.remove("is-active");
+    }    
+});

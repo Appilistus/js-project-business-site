@@ -67,4 +67,4 @@ The site is designed to be friendly, safe, and trustworthy, with a focus on:
 
 This project was built as a portfolio project to demonstrate frontend development skills.
 
-**Created by**: Asako Kanno
+**Created by**: Asako K
